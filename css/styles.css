@@ -1,16 +1,314 @@
+.full-map{
+    display: flex;
+    justify-content: center;
+}
+
+.full-map-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    margin-top: 10vh;
+    background-color: #FFF;
+    z-index: 97;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+    gap: 10px;
+}
+
+#full-map-checker{
+    display: none;
+}
+
+#full-map-checker:checked ~ .full-map > .full-map-style{
+    visibility: visible;
+    opacity: 1;
+}
+
+.map-text{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #2B2D42;
+    transition: all .5s;
+}
+
+.map{
+    width: 80%;
+    height: 70vh;
+    border-radius: 20px;
+}
+
 .main-container{
     display: flex;
     justify-content: center; 
-    margin-top: 10vh;  
+    margin-top: 10vh;
 }
 
 .main-container-style{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 90%;
     padding: 0% 5%;
-    height: 90vh;
+    height: auto;
+    padding-bottom: 50px;
     background-color: white;
     transition: all .5s;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+}
+
+.container1-text{
+    display: flex;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: #2B2D42;
+    transition: all .5s;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8D99AE;
+    width: 500px;
+    height: 60vh;
+    padding-top: 20px;
+    border-radius: 20px; 
+    margin-top: 20px;
+}
+
+.container1-img{
+    width: 400px;
+    height: 50vh;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 20px;
+}
+  
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+    gap: 30px;
+}
+
+
+.container3-text{
+    display: flex;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #2B2D42;
+    transition: all .5s;
+}
+
+
+
+
+.des{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+
+.des-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #2B2D42;
+    gap: 7px;
+    transition: all .5s;
+}
+
+.address-text{
+    font-size: 24px;
+}
+
+.des-text-inf{
+    font-size: 20px;
+}
+
+.contact{
+    font-size: 18px;
+}
+
+.map-and-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.des-map{
+    display: flex;
+    width: 40%;
+    height: 300px;
+}
+
+.des-pic{
+    display: flex;
+    width: 40%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    
+.container2{
+    width: 330px;
+    height: fit-content;
+}
+
+.container1-img{
+    width: 300px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+}
+
+@media (max-width:600px) {
+    
+.map-and-picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.des-map{
+    display: flex;
+    width: 80%;
+    height: 300px;
+}
+
+.des-pic{
+    display: flex;
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+}
+
 }

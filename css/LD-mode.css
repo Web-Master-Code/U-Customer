@@ -62,3 +62,27 @@
     background-color: #2B2D42;
     border-left-color: #8D99AE;
 }
+
+#LD-checker:checked ~ .main-container > .main-container-style > .container1 > .container1-text{
+    color: #FFF;
+}
+
+#LD-checker:checked ~ .main-container > .main-container-style > .container2{
+    background-color: #FFF;
+}
+
+#LD-checker:checked ~ .full-map > .full-map-style{
+    background-color: #2B2D42;
+}
+
+#LD-checker:checked ~ .full-map > .full-map-style > .map-text{
+    color: #FFF;
+}
+
+#LD-checker:checked ~ .main-container > .main-container-style > .container3 > .container3-text{
+    color: #FFF;
+}
+
+#LD-checker:checked ~ .main-container > .main-container-style > .container3 > .des > .des-text{
+    color: #FFF;
+}

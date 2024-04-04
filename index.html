@@ -16,6 +16,18 @@
     
     <input type="checkbox" id="LD-checker">
     <input type="checkbox" id="navbar-checker">
+    <input type="checkbox" id="full-map-checker">
+
+    <div class="full-map">
+
+        <div class="full-map-style">
+
+            <div class="map-text">Full Map</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653434.2154256944!2d55.105728924423666!3d20.482938027092054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3dd69f66a9d59bbf%3A0x3a064c7665b1a817!2sOman!5e0!3m2!1sen!2s!4v1712235653164!5m2!1sen!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+        </div>
+
+    </div>
 
     <nav class="navbar">
 
@@ -43,14 +55,14 @@
                     <div class="nav-text">tour guides</div>
                     <div class="line"></div>
                 </div>
-                <div class="text-pos">
+                <label for="full-map-checker" class="text-pos">
                     <div class="nav-text">full map</div>
                     <div class="line"></div>
-                </div>
-                <div class="text-pos">
-                    <div class="nav-text">about oman</div>
+                </label>
+                <a href="#TDO" class="text-pos">
+                    <div class="nav-text">regions of oman</div>
                     <div class="line"></div>
-                </div>
+                </a>
             </div>
 
             <label for="navbar-checker" class="M-C">
@@ -67,7 +79,149 @@
 
         <div class="main-container-style">
 
+            <div class="container1">
+                <div class="container1-text">Oman For Tourism</div>
+            </div>
+
+            <div class="container2">
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="images/1.jpeg" class="container1-img">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="images/2.jpeg" class="container1-img">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="images/3.jpeg" class="container1-img">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/4.jpeg" class="container1-img">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/5.jpeg" class="container1-img">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/6.jpeg" class="container1-img">
+                    </div>
+                    
+                </div>
+
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+
+                    <script>
+                        let slideIndex = 0;
+                        showSlides();
+                        
+                        function showSlides() {
+                          let i;
+                          let slides = document.getElementsByClassName("mySlides");
+                          let dots = document.getElementsByClassName("dot");
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                          }
+                          slideIndex++;
+                          if (slideIndex > slides.length) {slideIndex = 1}    
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].className += " active";
+                          setTimeout(showSlides, 2000); // Change image every 2 seconds
+                        }
+                    </script>
+            </div>
+
+            <div class="container3" id="TDO">
+
+                <div class="container3-text">Tourist Destinations in Oman</div>
+
+                <div class="des">
+
+                    <div class="des-text">
+                        <div class="address-text">Muscat</div>
+                        <div class="des-text-inf">The capital of Oman, Muscat is a vibrant modern city with a rich history. Tourist attractions in Muscat include the Sultan Qaboos Grand Mosque, the Royal Opera House Muscat, and the Al Alam Palace.</div>
+                        <div class="contact">For inquiries and requests, please contact the tour guide department.</div>
+                    </div>
+                    <div class="map-and-picture">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234022.52055370004!2d58.259703857557334!3d23.582737835540122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91ffa8879aafc9%3A0xdb53876d0d79a72c!2sMuscat%2C%20Oman!5e0!3m2!1sen!2snl!4v1712243040442!5m2!1sen!2snl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="des-map"></iframe>
+                        <img src="images/Muscat.jpeg" class="des-pic">
+                    </div>
+
+                </div>
             
+                <div class="des">
+
+                    <div class="des-text">
+                        <div class="address-text">Salalah</div>
+                        <div class="des-text-inf">A coastal city located in southern Oman, Salalah is known for its mild climate, green valleys, and beautiful beaches. Tourist attractions in Salalah include Mughsayl Beach, Ain Razat Oasis, and the archeological city of Sumhuram.</div>
+                        <div class="contact">For inquiries and requests, please contact the tour guide department.</div>
+                    </div>
+                    <div class="map-and-picture">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244123.34696068818!2d53.80056449481968!3d17.051739310787866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3dd3df964481c879%3A0xa5e758c7c82eb314!2sSalalah%2C%20Oman!5e0!3m2!1sen!2snl!4v1712243479470!5m2!1sen!2snl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="des-map"></iframe>
+                        <img src="images/Salalah.jpeg" class="des-pic">
+                    </div>
+
+                </div>
+
+                <div class="des">
+
+                    <div class="des-text">
+                        <div class="address-text">Nizwa</div>
+                        <div class="des-text-inf">An inland city situated in northern Oman, Nizwa is famous for its traditional souq, ancient fort, and grand mosque. Tourist attractions in Nizwa include Nizwa Fort, Nizwa Souq, and Nizwa Grand Mosque.</div>
+                        <div class="contact">For inquiries and requests, please contact the tour guide department.</div>
+                    </div>
+                    <div class="map-and-picture">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117600.84560559159!2d57.45220151407007!3d22.9123961509689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8ef08e929ecde1%3A0x43f3bf5c566c48e7!2sNizwa%2C%20Oman!5e0!3m2!1sen!2snl!4v1712243631761!5m2!1sen!2snl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="des-map"></iframe>
+                        <img src="images/Nizwa.jpeg" class="des-pic">
+                    </div>
+
+                </div>
+
+                <div class="des">
+
+                    <div class="des-text">
+                        <div class="address-text">Wahiba Sands</div>
+                        <div class="des-text-inf">A vast desert located in central Oman, the Wahiba Sands is famous for its towering sand dunes, unique plants, and wildlife. Popular activities in the Wahiba Sands include camel riding, camping, and desert safaris.</div>
+                        <div class="contact">For inquiries and requests, please contact the tour guide department.</div>
+                    </div>
+                    <div class="map-and-picture">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1901426.3697875186!2d57.46125655830899!3d21.44011523364885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e9ae476ecb514d9%3A0x58cdba58acd9f3b6!2sWahiba%20Sands!5e0!3m2!1sen!2snl!4v1712243784626!5m2!1sen!2snl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="des-map"></iframe>
+                        <img src="images/Wahiba Sands.jpeg" class="des-pic">
+                    </div>
+
+                </div>
+
+                <div class="des">
+
+                    <div class="des-text">
+                        <div class="address-text">Hajar Mountains</div>
+                        <div class="des-text-inf">A mountain range located in northeastern Oman, the Hajar Mountains are famous for their stunning hikes, breathtaking views, and traditional villages. Popular activities in the Hajar Mountains include hiking, camping, and mountain climbing.</div>
+                        <div class="contact">For inquiries and requests, please contact the tour guide department.</div>
+                    </div>
+                    <div class="map-and-picture">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14657.736919337103!2d57.089701149438774!3d23.299998863681296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8e8e7b25ace27d%3A0xa5efd21e3074b744!2sAl%20Hajar%20Mountains!5e0!3m2!1sen!2snl!4v1712243886780!5m2!1sen!2snl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="des-map"></iframe>
+                        <img src="images/Hajar Mountains.jpeg" class="des-pic">
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
