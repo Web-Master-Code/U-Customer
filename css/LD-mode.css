@@ -86,3 +86,55 @@
 #LD-checker:checked ~ .main-container > .main-container-style > .container3 > .des > .des-text{
     color: #FFF;
 }
+
+#LD-checker:checked ~ .navbar > .navbar-style > .nav-right-side > .text-pos > .nav-text{
+    color: #FFF;
+}
+
+#LD-checker:checked ~ .footer > .footer-style{
+    background-color: #2B2D42;
+    border-top-color: #8D99AE;
+    color: #FFF;
+}
+
+#LD-checker:checked ~ .footer > .footer-style > .footer-logo-pos > .footer-logoC{
+    display: none;
+}
+
+#LD-checker:checked ~ .footer > .footer-style > .footer-logo-pos > .footer-logoW{
+    display: flex;
+}
+
+#LD-checker:checked ~ .footer > .footer-style > .footer-logo-pos > .footer-text-logo{
+    color: #FFF;
+}
+
+#LD-checker:checked ~ .footer > .footer-style > .contact-us > .contact-text{
+    color: #FFF;
+}
+
+#LD-checker:checked ~ .footer > .footer-style > .contact-us > .social > .social-space > .icon{
+    display: none;
+}
+
+#LD-checker:checked ~ .footer > .footer-style > .contact-us > .social > .social-space > .iconD{
+    display: flex;
+}
+
+
+
+
+/* tour-guides */
+
+#LD-checker:checked~ .main-container > .main-container-style .tour-main-text{
+    color: #FFF;
+}
+
+#LD-checker:checked ~ .main-container > .main-container-style > .tour-guides > .guides-profile{
+    background-color: #FFF;
+    color: #2B2D42;
+}
+
+#LD-checker:checked ~ .main-container > .main-container-style > .tour-guides > .guides-profile > .profile-pic{
+    border-color: #8D99AE;
+}

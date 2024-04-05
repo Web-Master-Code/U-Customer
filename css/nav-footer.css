@@ -6,7 +6,6 @@ html,body{
 
 a{
     text-decoration: none;
-    color: #2B2D42;
 }
 
 #navbar-checker,#LD-checker{
@@ -128,11 +127,22 @@ a{
 }
 
 .nav-text{
+    color: #2B2D42;
     font-size: 22px;
     font-weight: bold;
 }
 
 .nav-text:hover ~ .line{
+    width: 100%;
+}
+
+.nav-text1{
+    color: #2B2D42;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-text1:hover ~ .line{
     width: 100%;
 }
 
@@ -181,9 +191,92 @@ a{
 }
 
 
+.footer{
+    display: flex;
+    justify-content: center;
+}
 
+.footer-style{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background-color: #8D99AE;
+    border-top: 2px solid #2B2D42;
+    color: #2B2D42;
+    transition: all .5s;
+}
 
+.footer-logo-pos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 240px;
+    height: auto;
+    gap: 10px;
+}
 
+.footer-logoC,.footer-logoW{
+    display: flex;
+    width: 80px;
+    cursor: pointer;
+}
+
+.footer-logoW{
+    display: none;
+}
+
+.footer-text-logo{
+    font-family: Alegreya Sans SC;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2B2D42;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-text{
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-family: Alegreya Sans SC;
+    font-weight: bold;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.social-space{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon,.iconD{
+    width: 20px;
+}
+
+.iconD{
+    display: none;
+}
+
+.icon-text{
+    font-size: 20px;
+    font-weight: 500;
+}
 
 
 
@@ -243,5 +336,13 @@ a{
     transform: translateX(250px);
     transition: all .5s;
 }
+
+.footer-style{
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+}
+
+
 
 }

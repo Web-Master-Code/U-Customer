@@ -1,0 +1,87 @@
+.tour-main-text{
+    font-family: Alegreya Sans SC;
+    margin-top: 5vh;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    padding: 0 5%;
+    color: #2B2D42;
+    transition: all .5s;
+}
+
+.tour-guides{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.guides-profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    height: 200px;
+    background-color: #8D99AE;
+    color: #2B2D42;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.profile-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #2B2D42;
+    margin-top: -50px;
+    object-fit: cover;
+}
+
+.profile-name{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.profile-loc{
+    font-size: 20px;
+}
+
+.number{
+    font-size: 18px;
+}
+
+.profile-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.tour-days{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50vh;
+    background-color: #8D99AE;
+    color: #2B2D42;
+    border-radius: 20px;
+}
+
+.table-of-days{
+    width: 80%;
+    border: 2px solid #FFF;
+    padding: 10px;
+}
