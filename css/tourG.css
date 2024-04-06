@@ -28,11 +28,33 @@
     flex-direction: column;
     gap: 10px;
     width: 300px;
-    height: 200px;
+    height: 230px;
     background-color: #8D99AE;
     color: #2B2D42;
     border-radius: 10px;
     transition: all .5s;
+}
+
+.contact-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2B2D42;
+    background-color: transparent;
+    border: 2px solid #2B2D42;
+    border-radius: 50px;
+    width: fit-content;
+    height: 35px;
+    padding: 0px 40px;
+    transition: all .5s;
+}
+
+.contact-btn:hover{
+    background-color: #2B2D42;
+    color: white;
 }
 
 .profile-pic{
@@ -67,21 +89,62 @@
 
 }
 
-
+.tour-text{
+    font-family: Alegreya Sans SC;
+    margin-top: 5vh;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    padding: 0 5%;
+    color: #2B2D42;
+    transition: all .5s;
+}
 
 .tour-days{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 700px;
     height: 50vh;
     background-color: #8D99AE;
-    color: #2B2D42;
     border-radius: 20px;
+    margin-top: 20px;
+    transition: all .5s;
 }
 
-.table-of-days{
+.tour-days-img{
+    width: 600px;
+    height: 40vh;
+    padding: 20px 0;
+    background-color: #2B2D42;
+    border-radius: 10px;
+    object-fit: contain;
+    transition: all .5s;
+}
+
+.tour-text2{
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: center;
+    color: #2B2D42;
     width: 80%;
-    border: 2px solid #FFF;
-    padding: 10px;
+    transition: all .5s;
+}
+
+
+
+@media (max-width:800px) {
+    
+.tour-days{
+    width: 300px;
+    height: 30vh;
+}
+
+.tour-days-img{
+    width: 250px;
+    height: 20vh;
+    padding: 0;
+}
+
 }

@@ -121,6 +121,29 @@
     display: flex;
 }
 
+#LD-checker:checked ~ .up-icon{
+    background-color: #FFF;
+}
+
+#LD-checker:checked ~ .up-icon > .up-icon-img{
+    opacity: 1;    
+}
+
+#LD-checker:checked ~ .up-icon > .up-icon-imgD{
+    opacity: 0;
+}
+
+#LD-checker:checked ~ .back-icon{
+    background-color: #FFF;
+}
+
+#LD-checker:checked ~ .back-icon > .back-icon-img{
+    opacity: 1;    
+}
+
+#LD-checker:checked ~ .back-icon > .back-icon-imgD{
+    opacity: 0;
+}
 
 
 
@@ -137,4 +160,43 @@
 
 #LD-checker:checked ~ .main-container > .main-container-style > .tour-guides > .guides-profile > .profile-pic{
     border-color: #8D99AE;
+}
+
+#LD-checker:checked ~ .main-container > .main-container-style > .tour-text{
+    color: #FFF;
+}
+
+#LD-checker:checked ~ .main-container > .main-container-style > .tour-days{
+    background-color: #FFF;
+}
+
+#LD-checker:checked ~ .main-container > .main-container-style > .tour-text2{
+    color: #FFF;
+}
+
+
+/* Payment */
+
+#LD-checker:checked ~ .P-main-container > .P-main-container-style{
+    background-color: #2B2D42;
+}
+
+#LD-checker:checked ~ .P-main-container > .P-main-container-style > .P-container1{
+    background-color: #FFF;
+}
+
+#LD-checker:checked ~ .P-main-container > .P-main-container-style > .P-container1 > .prog-line-pos{
+    background-color: #FFF;
+}
+
+#LD-checker:checked ~ .P-main-container > .P-main-container-style > .P-container1 > .prog-line-pos > .prog-line{
+    background-color: #2B2D42;
+}
+
+#LD-checker:checked ~ .P-main-container > .P-main-container-style > .P-container1 > .element4 > .done-img > .thanks-msg{
+    opacity: 1;    
+}
+
+#LD-checker:checked ~ .P-main-container > .P-main-container-style > .P-container1 > .element4 > .done-img > .thanks-msgD{
+    opacity: 0;
 }
